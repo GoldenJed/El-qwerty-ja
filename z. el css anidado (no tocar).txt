@@ -1,0 +1,126 @@
+.Mensual{
+    display: grid;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+
+    .huevo{
+        background-color: violet;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        justify-content: center;
+        gap: 3rem;
+
+
+        #huevito1 {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            p{
+                width: 170px;
+                align-self: center;
+            }
+            h2{
+                width: 100px;
+                align-self: center;
+            }
+            .imagen{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+    
+            
+        }
+        #huevito2 {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            p{
+                width: 170px;
+                align-self: center;
+            }
+            h2{
+                width: 100px;
+                align-self: center;
+            }
+            .imagen{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+
+.TodoTiempo{
+    display: grid;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+
+    .pelota{
+        background-color: violet;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-content: center;
+        gap: 3rem;
+
+
+        #pelotita1{
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            p{
+                width: 170px;
+                align-self: center;
+            }
+            h2{
+                width: 100px;
+                align-self: center;
+            }
+            .imagen{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+        #pelotita2{
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            p{
+                width: 170px;
+                align-self: center;
+            }
+            h2{
+                width: 100px;
+                align-self: center;
+            }
+            .imagen{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}

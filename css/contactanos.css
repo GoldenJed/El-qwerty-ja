@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');  /*importacion del estilo de letra*/
+
+/* ############################################ INICIO DEL CSS (Productos) ################################################ */
+
+
+/* ################## INICIO DEL AJUSTE GENERAL DEL BODY #################### */
+
+body{                                          
+    width: 100%;
+    margin: 0;
+    padding: 0 1px;
+    background-color: #e2e964;
+}
+
+/* ################## FINAL DEL AJUSTE GENERAL DEL BODY #################### */
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°  comienzo HEADER  °°°°°°°°°°°°°°°°°°°°°°*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #ffae00;
+    margin-top: auto;
+}
+
+header div p{
+    font-family: "Playwrite AU VIC", cursive;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
+}
+header div{
+    justify-content: center;
+    padding-top: 15px;
+}
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°  final HEADER  °°°°°°°°°°°°°°°°°°°°°°*/
+
+
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°  comienzo NAV  °°°°°°°°°°°°°°°°°°°°°°*/
+.Head {               /*---Contenedor de las Barras y Botones---*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0; 
+    align-items: center;
+    overflow: hidden;
+    background-image: url(cssIMG/BACKGROUNDIMAGE.jpg);
+}
+    
+
+.Barra1 {                     /*---Barras---*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+}
+.Barra1 img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+
+.BarraBusqueda{              
+    display: flex;
+    padding: 50px;
+}
+.BarraBusqueda form{    /*Reubicacion de la barra de busqueda*/
+    display: flex;
+}
+
+.BarraBusqueda button{          /*diseño de la barra de busqueda*/
+    background-color: rgb(211, 34, 34);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.BarraBusqueda button:hover {
+    background-color: rgb(158, 28, 28);
+    transition-duration: 1s;
+}
+.BarraBusqueda input{
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+
+.BarraRegistro{                
+    display: flex;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.BarraRegistro a img{
+    width: 80%;
+    
+}
+
+
+
+
+#BOTONES{                  /*Botones*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.BOTON1{ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.BOTON1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+}
+.BOTON1:hover {
+    background-color: gray;
+}
+
+
+.BOTON2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.BOTON2 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+.BOTON2:hover {
+    background-color: gray;
+}
+
+/*°°°°°°°°°°°°°°°°°°°°°°  final NAV °°°°°°°°°°°°°°°°°°°°°°*/
+
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°  comienzo MAIN °°°°°°°°°°°°°°°°°°°°°°*/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+        animation: aparicion2 1.2s ease-out alternate;
+    }
+  
+
+  
+  .Encima {
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-size: 39px;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    animation: aparicion 2s cubic-bezier(1, 0, 1, 0.99) alternate;
+  }
+
+
+}
+@keyframes aparicion{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes aparicion2{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+
+
+.fabelas{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fabela1, .fabela2, .fabela3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+
+
+.fabela1{
+    background-color: indigo;
+    padding: 15px 0px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.fabela2{
+    background-color: lime;
+    padding: 15px 0px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.fabela3{
+    background-color: gray;
+    padding: 15px 0px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.aui{
+    width: 400px;
+    h2{
+        font-size: 35px;
+    }
+}
+.textin{
+    width: 450px;
+    p{
+        font-size: 18px;
+    }
+}
+.imagin{
+    width: 300px;
+    img{
+        width: 100%;
+    }
+}
+
+/*---------------RESPONSIVE MAIN-------------*/
+@media (min-width: 1650px){
+    .fabelas{
+        flex-direction: row;
+        width: 100%;
+    }
+    .fabela1{
+        flex-direction: column;
+        width:33.3%
+    }
+    .fabela2{
+        flex-direction: column;
+        width:33.3%
+    }
+    .fabela3{
+        flex-direction: column;
+        width:33.3%
+    }
+
+    .aui{
+        h2{
+            font-size: 33px;
+        }
+    }
+
+    .textin{
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .Encima{
+        margin-left: 100px;
+    }
+
+
+
+}
+
+
+@media (max-width: 660px) {
+    .fabela1{
+        flex-direction: column;
+    }
+    .fabela2{
+        flex-direction: column;
+    }
+    .fabela3{
+        flex-direction: column;
+    }
+
+    .Encima{
+        margin-bottom: auto;
+        font-size: 11px;
+    }
+
+
+
+}
+
+
+
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°  final MAIN °°°°°°°°°°°°°°°°°°°°°°*/
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°  FOOTER  °°°°°°°°°°°°°°°°°°°°°°*/
+footer{
+    width: 100%;
+    background-color: rgb(29, 28, 41);
+}
+footer ul{
+    display: inline;
+    margin: 0;
+    text-align: center;
+}
+
+footer ul li{
+    padding: 5px 0px;
+}
+
+footer ul li:hover{
+    background-color: indigo;
+}
+
+
+
+footer ul li a{
+    text-decoration: none;
+}
+
+
+.socialmedia{
+    margin-left: 10px;
+    display: grid;
+    width: 15%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+}
+.socialmedia div img{
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.socialmedia div :hover{
+    border-color: yellow;
+    transition-duration: 0.5s;
+}
+
+
+
+.Derechos{
+    background-color: black;
+}
+.Derechos p{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° RESPONSIVE °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
+@media (max-width: 1024px) {
+    .Barra1{
+        display: block;
+    }
+    .Barra1 img{
+        display: block;
+        min-width: 110px;;
+
+    }
+    @media (max-width: 685px) {     
+        .Barra1 img{
+            min-width: 80px;
+        }
+    }
+
+    .BarraBusqueda{
+        padding: auto;
+    }
+
+    .BarraBusqueda input{
+        width: auto;
+    }
+
+    #BOTONES{
+        display: flex;
+        flex-direction: column;
+        .BOTON1{
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+        .BOTON2{
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+    }
+    .BarraRegistro {
+        width: auto;
+    }
+}
+
+
+
+@media (max-width: 746px) and (min-width: 481px){            /*---------Para tabletas------------*/
+.BarraBusqueda{
+    margin: 0;
+    padding: 0;
+    input{
+        width: 300px;
+    }
+}
+
+.BarraRegistro a img{
+    width: 10%;
+    transform: translateY(-50px);
+}
+.Barra1 img{
+    padding: 5px;
+    width: 15px;
+}
+.Head{
+    background-color: #bfc550;
+    display: flex;
+    flex-direction: column;
+}
+
+.BOTON1{
+    border-radius: 50%;
+
+}
+.BOTON2{
+    border-radius: 50%;
+
+}
+
+
+}
+
+
+
+/*---------------Para moviles----------------*/
+
+@media (max-width: 480px){
+.BarraBusqueda{
+    margin: 0;
+    padding: 0;
+    input{
+        width: auto;
+    }
+}
+
+.BarraRegistro a img{
+    width: 10%;
+    transform: translateY(-50px);
+}
+.Barra1 img{
+    padding: 5px;
+    width: 15px;
+}
+.Head{
+    background-color: #bfc550;
+    display: flex;
+    flex-direction: column;
+}
+
+.BOTON1{
+    border-radius: 50%;
+
+}
+.BOTON2{
+    border-radius: 50%;
+
+}
+
+}
+
